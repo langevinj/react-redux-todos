@@ -6,7 +6,9 @@ import TodoForm from './TodoForm'
 function App() {
   return (
     <div className="App">
-
+      <h2>Todos:</h2>
+      <TodoForm />
+      <TodoList />
     </div>
   );
 }
