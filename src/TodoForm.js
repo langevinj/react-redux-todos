@@ -25,6 +25,9 @@ function TodoForm(){
             <form onSubmit={handleSubmit}>
                 <label htmlFor="task">Enter a task:</label>
                 <input type="text" name="task" id="task" value={formData.task} onChange={handleChange}></input>
+                <div>
+                    <button>Add to the list!</button>
+                </div>
             </form>
         </div>
     )

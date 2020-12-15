@@ -1,10 +1,10 @@
 import React from 'react' 
 
-function Todo({ todo }){
+function Todo({ todo, remove }){
 
     return (
-        <span key={todo.id} id={todo.id}>
-            {todo.task}</span>
+        <div key={todo.id} id={todo.id} onClick={remove}>
+            {todo.task}</div>
     )
 }
 

@@ -6,7 +6,7 @@ function rootReducer(state = INITIAL_STATE, action) {
             return { ...state, todos: [...state.todos, action.payload]}
         
         case "DELETE":
-            return { ...state, todos: state.todos.filter(todo => todo.id !== action.payload.id)}
+            return { ...state, todos: state.todos.filter(todo => todo.id !== action.payload)}
 
         default:
             return state;
