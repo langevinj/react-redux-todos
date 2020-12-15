@@ -1,13 +1,11 @@
 import React from 'react' 
 
-function Todo({ todo, remove }){
+function Todo({ todo }){
 
     return (
-        <span>
-
-        </span>
+        <span key={todo.id} id={todo.id}>
+            {todo.task}</span>
     )
-
 }
 
 export default Todo;

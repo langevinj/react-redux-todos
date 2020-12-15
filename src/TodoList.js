@@ -13,7 +13,7 @@ function TodoList(){
 
     return (
         <ul className="Todolist">
-           {todos ? todos.map(todo => <li><Todo todo={todo} remove={remove}/></li>) : null}
+           {todos ? todos.map(todo => <li onClick={remove}><Todo todo={todo}/></li>) : null}
         </ul>
     )
 }
