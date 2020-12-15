@@ -7,9 +7,9 @@ function TodoList(){
     const todos = useSelector(st => st.todos)
     const dispatch = useDispatch();
 
+    //on clicking a todolist item remove it from the todolist
     const remove = (evt) => {
         evt.preventDefault();
-        console.log("CLICKED")
         dispatch({ type: "DELETE", payload: evt.target.id})
     }
 
